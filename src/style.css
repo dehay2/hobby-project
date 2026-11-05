@@ -1,8 +1,77 @@
-h1 {
+body {
   font-family: "Lora", serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 66px;
-  line-height: 144px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+header {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("../images/baking-3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #efe4d0;
   text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-size: 86px;
+  line-height: 1;
+  margin: 40px 0;
+}
+
+header h2 {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0;
+}
+
+header h3 {
+  letter-spacing: 5px;
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header a {
+  background: wheat;
+  text-decoration: none;
+  padding: 16px 32px;
+  margin-top: 40px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-radius: 4px;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@media (max-width: 800px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
+
+  header h3 {
+    font-size: 18px;
+    margin-bottom: -15px;
+  }
+
+  header a {
+    font-size: 14px;
+    padding: 12px 25px;
+  }
 }

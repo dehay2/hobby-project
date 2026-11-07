@@ -53,6 +53,54 @@ header a {
   font-size: 17px;
 }
 
+footer {
+  background-image:
+    linear-gradient(rgba(42, 37, 62, 0.9), rgba(39, 32, 68, 0.9)),
+    url("../images/artisan-pastry.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  margin: 20px;
+}
+
+section {
+  max-width: 1600px;
+  margin: 60px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+footer li {
+  list-style: none;
+  line-height: 2;
+}
+
+footer h3 {
+  color: beige;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 16px;
+  margin-right: 40px;
+  line-height: 24px;
+  color: rgb(255, 227, 176);
+}
+
+footer a {
+  color: rgb(255, 227, 176);
+  opacity: 0.8;
+}
+
 @media (max-width: 800px) {
   header {
     padding: 60px 0;

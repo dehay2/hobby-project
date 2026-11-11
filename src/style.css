@@ -1,11 +1,11 @@
 body {
   font-family: "Lora", serif;
-  background: #c99b5a;
+  background: #dba964;
 }
 
 .container {
   max-width: 1600px;
-  margin: 0 auto;
+  margin: 0 36px;
 }
 
 header {
@@ -20,13 +20,13 @@ header {
 }
 
 header h1 {
-  font-size: 86px;
+  font-size: 76px;
   line-height: 1;
   margin: 40px 0;
 }
 
 header h2 {
-  font-size: 35px;
+  font-size: 25px;
   font-style: italic;
   font-weight: 400;
   margin: 0;
@@ -34,7 +34,7 @@ header h2 {
 
 header h3 {
   letter-spacing: 5px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
   margin: 0;
 }
@@ -50,7 +50,7 @@ header a {
   border-radius: 4px;
   color: black;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 footer {
@@ -59,7 +59,7 @@ footer {
     url("../images/artisan-pastry.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .img-muffins {
@@ -75,20 +75,65 @@ footer {
 
 .grid-main {
   grid-template-columns: 1fr 1fr;
+  padding: 50px;
 }
 
 .grid-footer {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.grid-cards {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.backdrop {
+  background: #f8f8f8;
+  padding: 100px;
+}
+
+.card {
+  background: white;
+  margin: 30px 0;
+}
+
+.card-body {
+  padding: 40px;
+}
+
+.card-footer {
+  padding: 30px;
+}
+
+.img-responsive {
+  max-width: 50%;
+  display: block;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 16px;
+  background-color: #462cb3;
+  text-decoration: none;
+}
+
 section {
-  max-width: 1600px;
-  margin: 80px;
+  padding: 100px 0;
 }
 
 main {
   background: white;
-  padding: 50px;
+  padding: 0;
 }
 
 main h2 {
@@ -105,6 +150,22 @@ main h3 {
   font-weight: 700;
   font-size: 40px;
   line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
   color: #272044;
   margin: 0;
 }

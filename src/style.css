@@ -206,6 +206,10 @@ footer a {
 }
 
 @media (max-width: 800px) {
+  .container {
+    margin: 0;
+  }
+
   header {
     padding: 60px 0;
   }
@@ -237,11 +241,19 @@ footer a {
     padding: 0;
   }
 
+  .backdrop {
+    padding: 20px;
+  }
+
   main h2 {
     font-size: 13px;
   }
 
   main h3 {
     font-size: 36px;
+  }
+
+  .baking-links {
+    text-align: center;
   }
 }

@@ -1,11 +1,16 @@
+:root {
+  --main-section-color: #272044;
+}
+
 body {
   font-family: "Lora", serif;
   background: #dba964;
 }
 
 .container {
-  max-width: 1600px;
-  margin: 0 36px;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 header {
@@ -53,6 +58,57 @@ header a {
   font-size: 16px;
 }
 
+section {
+  padding: 100px 0;
+}
+
+main {
+  background: white;
+  padding: 0;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: var(--main-section-color);
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  color: var(--main-section-color);
+  margin: 0;
+}
+
+main h4 {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--main-section-color);
+  margin: 0;
+}
+
+main h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--main-section-color);
+  margin: 0;
+}
+
+main p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-section-color);
+  opacity: 0.9;
+}
+
 footer {
   background-image:
     linear-gradient(rgba(42, 37, 62, 0.9), rgba(39, 32, 68, 0.9)),
@@ -62,15 +118,51 @@ footer {
   padding: 20px;
 }
 
+footer h3 {
+  color: beige;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+  color: rgb(255, 227, 176);
+}
+
+footer ul {
+  padding: 0;
+  margin: 0 auto;
+}
+
+footer li {
+  list-style: none;
+  line-height: 2;
+}
+
+footer a {
+  color: rgb(255, 227, 176);
+  opacity: 0.8;
+}
+
 .img-muffins {
   max-width: 80%;
   padding-left: 105px;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.backdrop {
+  background: #f8f8f8;
+  padding: 100px;
+}
+
 .grid {
   display: grid;
   grid-gap: 70px;
-  margin: 20px;
+  margin: 0 20px 20px 20px;
 }
 
 .grid-main {
@@ -83,15 +175,6 @@ footer {
 
 .grid-cards {
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.backdrop {
-  background: #f8f8f8;
-  padding: 100px;
 }
 
 .card {
@@ -136,82 +219,9 @@ footer {
   text-decoration: none;
 }
 
-section {
-  padding: 100px 0;
-}
-
-main {
-  background: white;
-  padding: 0;
-}
-
-main h2 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 1.5;
-  letter-spacing: 5px;
-  color: #272044;
-  opacity: 0.6;
-  text-transform: uppercase;
-}
-
-main h3 {
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 1.5;
-  color: #272044;
-  margin: 0;
-}
-
-main h4 {
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 1.2;
-  color: #272044;
-  margin: 0;
-}
-
-main h5 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.2;
-  color: #272044;
-  margin: 0;
-}
-
-main p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #272044;
-  opacity: 0.9;
-}
-
-footer ul {
-  padding: 0;
-  margin: 0 auto;
-}
-
-footer li {
-  list-style: none;
-  line-height: 2;
-}
-
-footer h3 {
-  color: beige;
-  font-size: 21px;
-  font-weight: 600;
-}
-
-footer p {
-  font-size: 16px;
-  line-height: 24px;
-  color: rgb(255, 227, 176);
-}
-
-footer a {
-  color: rgb(255, 227, 176);
-  opacity: 0.8;
+.gallery-embed {
+  margin: 35px 80px 50px 80px;
+  grid-gap: 55px;
 }
 
 @media (max-width: 800px) {
@@ -245,7 +255,13 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  .card-header {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
   .img-muffins {
+    width: 70%;
     padding: 0;
   }
 
@@ -259,6 +275,15 @@ footer a {
 
   main h3 {
     font-size: 36px;
+  }
+
+  footer h3 {
+    text-align: center;
+  }
+
+  .gallery-embed {
+    max-width: 80%;
+    margin: 0 auto;
   }
 
   .baking-links {
